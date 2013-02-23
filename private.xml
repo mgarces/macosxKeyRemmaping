@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<root>
+   <!--App definitions, so I can specify in which app I want to use the modifiers-->
+   <appdef>
+     <appname>ITERM2</appname>
+     <equal>com.googlecode.iterm2</equal>equal
+   </appdef>
+
+  <!--this modifier adds CLI slash to OPTION_R (right alt)-->
+  <item>
+    <name>Swap ALT_R with /</name>
+    <identifier>iterm2.private.slash</identifier>
+    <only>ITERM2</only>
+    <autogen>
+      __KeyToKey__
+      KeyCode::OPTION_R,
+      KeyCode::KEY_7, ModifierFlag::SHIFT_L
+    </autogen>
+  </item>
+
+</root>
